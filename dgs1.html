@@ -63,36 +63,7 @@
 				r[6] = Math.floor(Math.random() * 6) + 1;
 
 				for (var i = 1; i <= 6; i++) {
-
-					if(r[i]==1){
-					document.getElementById('d'+i).innerHTML
-					='<img src="./1.jpg"<br>';
-					}
-
-					else if(r[i]==2){
-					document.getElementById('d'+i).innerHTML
-					='<img src="./2.jpg"<br>';
-					}
-
-					else if(r[i]==3){
-					document.getElementById('d'+i).innerHTML
-					='<img src="./3.jpg"<br>';
-					}
-
-					else if(r[i]==4){
-					document.getElementById('d'+i).innerHTML
-					='<img src="./4.jpg"<br>';
-					}
-
-					else if(r[i]==5){
-					document.getElementById('d'+i).innerHTML
-					='<img src="./5.jpg"<br>';
-					}
-
-					else{
-					document.getElementById('d'+i).innerHTML
-					='<img src="./6.jpg"<br>';
-					}
+					document.getElementById('d' + i).innerHTML = '<img src="./' + r[i] + '.jpg"<br>';
 				}
 			}
 		</script>
