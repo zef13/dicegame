@@ -1,100 +1,58 @@
 <!DOCTYPE HTML>
-	<html>
+<html>
 
-	<head>
-		<meta charset="utf-8">
-		<title>Dice Game</title>
-	</head>
+<head>
+	<meta charset="utf-8">
+	<title>Dice Game</title>
+</head>
 
-	<body>
-		<h3>Dice Game</h3>
-		<hr>
-		<input type="button" value="to roll dice" onClick="getNum()">
-		<div id="d1">
+<body>
+	<h3>Dice Game</h3>
+	<hr>
+	<input type="button" value="to roll dice" onClick="getNum()">
+	<div id="d1">
 		<img src="./1.jpg">
-		</div>
-		<input type="button" value="select" onClick="select1()"<br>
+	</div>
+	<input type="button" value="select" onClick="select1()"<br>
 
-		<div id="d2">
+	<div id="d2">
 		<img src="./2.jpg">
-		</div>
-		<input type="button" value="select" onClick="select2()"<br>
+	</div>
+	<input type="button" value="select" onClick="select2()"<br>
 
-		<div id="d3">
+	<div id="d3">
 		<img src="./3.jpg">
-		</div>
-		<input type="button" value="select" onClick="select3()"<br>
+	</div>
+	<input type="button" value="select" onClick="select3()"<br>
 
-		<div id="d4">
+	<div id="d4">
 		<img src="./4.jpg">
-		</div>
-		<input type="button" value="select" onClick="select4()"<br>
+	</div>
+	<input type="button" value="select" onClick="select4()"<br>
 
-		<div id="d5">
+	<div id="d5">
 		<img src="./5.jpg">
-		</div>
-		<input type="button" value="select" onClick="select5()"<br>
+	</div>
+	<input type="button" value="select" onClick="select5()"<br>
 
-		<div id="d6">
+	<div id="d6">
 		<img src="./6.jpg">
-		</div>
-		<input type="button" value="select" onClick="select6()"<br>
+	</div>
+	<input type="button" value="select" onClick="select6()"<br>
 
-		<input type="button" value="re to roll dice" onClick="retoroll()">
+	<input type="button" value="re to roll dice" onClick="retoroll()">
 
-		<form name="form1">
+	<form name="form1">
 		<input name="point"type="text" value="0">
-		</form>
+	</form>
 
-		<script type="text/javascript">
-			function getNum() {
-				var r=[];
-
-				r[1] = Math.floor(Math.random() * 6) + 1;
-
-				r[2] = Math.floor(Math.random() * 6) + 1;
-
-				r[3] = Math.floor(Math.random() * 6) + 1;
-
-				r[4] = Math.floor(Math.random() * 6) + 1;
-
-				r[5] = Math.floor(Math.random() * 6) + 1;
-
-				r[6] = Math.floor(Math.random() * 6) + 1;
-
-				for (var i = 1; i <= 6; i++) {
-
-					if(r[i]==1){
-					document.getElementById('d'+i).innerHTML
-					='<img src="./1.jpg"<br>';
-					}
-
-					else if(r[i]==2){
-					document.getElementById('d'+i).innerHTML
-					='<img src="./2.jpg"<br>';
-					}
-
-					else if(r[i]==3){
-					document.getElementById('d'+i).innerHTML
-					='<img src="./3.jpg"<br>';
-					}
-
-					else if(r[i]==4){
-					document.getElementById('d'+i).innerHTML
-					='<img src="./4.jpg"<br>';
-					}
-
-					else if(r[i]==5){
-					document.getElementById('d'+i).innerHTML
-					='<img src="./5.jpg"<br>';
-					}
-
-					else{
-					document.getElementById('d'+i).innerHTML
-					='<img src="./6.jpg"<br>';
-					}
-				}
-			}
-		</script>
-	</body>
-	</html>
+	<script type="text/javascript">
+	function getNum() {
+		for (var i = 1; i <= 6; i++) {
+			var roll = Math.floor(Math.random() * 6) + 1;
+			document.getElementById('d' + i).innerHTML = '<img src="./' + roll + '.jpg"><br>';
+		}
+	}
+	</script>
+</body>
+</html>
