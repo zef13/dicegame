@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Dice Game</title>
+	<script src="dg.js"></script>
 </head>
 
 <body>
@@ -46,13 +47,6 @@
 		<input name="point"type="text" value="0">
 	</form>
 
-	<script type="text/javascript">
-	function getNum() {
-		for (var i = 1; i <= 6; i++) {
-			var roll = Math.floor(Math.random() * 6) + 1;
-			document.getElementById('d' + i).innerHTML = '<img src="./' + roll + '.jpg"><br>';
-		}
-	}
-	</script>
+
 </body>
 </html>
